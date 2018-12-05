@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-opencv:latest
+FROM diuis/docker-emsdk-opencv:v1.0.1
 
 USER root
 RUN mkdir /opencv_wasm && chown appuser /opencv_wasm
