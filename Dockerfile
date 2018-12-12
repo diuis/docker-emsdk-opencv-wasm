@@ -1,9 +1,6 @@
-FROM diuis/docker-emsdk-opencv3:v1.1.10
+FROM diuis/docker-emsdk-opencv3:v1.1.11
 
-USER root
-RUN mkdir /opencv_wasm && chown appuser /opencv_wasm
-
-USER appuser
 SHELL ["/bin/bash", "-c"]
 RUN source /emsdk/emsdk_env.sh && \
-    python /opencv/opencv-3.4.4/platforms/js/build_js.py --build_wasm /opencv_wasm
+    mkdir /home/appuser/opencv_wasm && \
+    python /home/appuser/opencv/opencv-opencv-2b01723/platforms/js/build_js.py --build_wasm /home/appuser/opencv_wasm
