@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-opencv3:v1.1.11
+FROM diuis/docker-emsdk-opencv3:v1.1.12
 
 SHELL ["/bin/bash", "-c"]
 RUN source /emsdk/juj-emsdk-7a0e274/emsdk_env.sh && \
