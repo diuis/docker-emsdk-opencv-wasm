@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-opencv3:opencv3.4.6
+FROM diuis/docker-emsdk-opencv3:opencv3.4.5
 
 USER root
 RUN update-alternatives --set python /usr/bin/python2.7
